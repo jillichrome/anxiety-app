@@ -2,10 +2,10 @@ const mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
-const postsSchema = new Schema({
-  title: String,
+const techniquesSchema = new Schema({
   technique: String,
-  comment: String
+  date: Date,
+  category: String
 })
 
-model.exports = mongoose.model('Posts', postsSchema);
+model.exports = mongoose.model('Techniques', techniquesSchema);
