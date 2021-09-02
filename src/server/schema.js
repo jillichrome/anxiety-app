@@ -1,4 +1,4 @@
-const mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
@@ -8,4 +8,6 @@ const techniquesSchema = new Schema({
   category: String
 })
 
-model.exports = mongoose.model('Techniques', techniquesSchema);
+const Technique = mongoose.model('Technique', techniquesSchema);
+
+module.exports = Technique;
