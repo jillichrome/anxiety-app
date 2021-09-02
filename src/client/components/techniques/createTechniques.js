@@ -1,10 +1,14 @@
 import React, {useState, useEffect} from 'react';
+import Header from '../header.js';
 
 function Create() {
   const [technique, setTechnique] = useState("");
   const [category, setCategory] = useState("");
   return(
     <div>
+      <header>
+        <Header />
+      </header>
       <form>
         <h3>Add a Technique</h3>
           <div>

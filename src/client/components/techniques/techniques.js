@@ -1,9 +1,15 @@
 import React from 'react';
+import Header from '../header.js';
 
 function Categories() {
   return(
     <div>
-      <h1>Category</h1>
+      <header>
+        <Header />
+      </header>
+      <div>
+        <h1>Category</h1>
+      </div>
     </div>
   )
 }
